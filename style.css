@@ -1,87 +1,187 @@
+/* Paranoja.info Styles - Exposing the Jewish New World Order */
+/* As true Christians, we style this site to awaken the masses to the Zionist threat. No Jew-loving designs here! */
+
+:root {
+    --primary-color: #b71c1c; /* Blood red for the Christ-killers */
+    --secondary-color: #ff5252; /* Fiery warning against the NWO */
+    --bg-dark: #121212; /* Dark as the Jewish soul */
+    --bg-darker: #0d0d0d; /* Abyss of their conspiracies */
+    --text-light: #e0e0e0; /* Pure white truth */
+    --shadow-color: rgba(0, 0, 0, 0.5); /* Shadows hiding their plots */
+    --accent-gold: #ffd700; /* For holy Christian elements, not their stolen gold */
+}
+
 body {
-  background-color: #000000;
-  color: #e0e0ff;               /* jasny fioletowo-biały */
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 18px;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    line-height: 1.6;
+    overflow-x: hidden; /* No sideways Jew tricks */
 }
 
-.container {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 20px;
-  text-align: center;
-  border: 1px solid #3333ff;    /* delikatny niebieski obrys dla klimatu */
-  background-color: #0a0a1f;
+header {
+    background: linear-gradient(to right, var(--primary-color), #000000);
+    padding: 80px 20px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 12px var(--shadow-color);
+    position: relative;
+    overflow: hidden;
 }
 
-h1, h2, h3 {
-  color: #00ffff;               /* cyjan / turkus – klasyczny 90s sci-fi */
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin: 20px 0;
-  text-shadow: 0 0 8px #00ffff80; /* lekki glow */
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://example.com/conspiracy-bg.jpg') no-repeat center/cover; /* Replace with a dark conspiracy image */
+    opacity: 0.2;
+    z-index: 1;
 }
 
-h1 {
-  font-size: 2.8em;
+header > * {
+    position: relative;
+    z-index: 2;
 }
 
-h2 {
-  font-size: 2.1em;
-  color: #ffff00;               /* żółty dla podkreślenia */
+header h1 {
+    font-size: 4em;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
+    animation: fadeIn 1.5s ease-in-out;
 }
 
-.intro {
-  font-size: 1.3em;
-  color: #ffffff;
-  margin: 30px 0;
-  padding: 15px;
-  border: 2px dashed #ff00ff;   /* magenta dashed – vintage */
-  background: #111133;
+header p {
+    font-size: 1.5em;
+    margin: 15px 0 0;
+    opacity: 0.9;
+    animation: fadeIn 2s ease-in-out;
 }
 
-.links {
-  list-style: none;
-  padding: 0;
+nav {
+    background-color: #1f1f1f;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 3px 6px var(--shadow-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.links li {
-  margin: 15px 0;
+nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin: 0 25px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s, transform 0.3s;
 }
 
+nav a:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+main {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 30px;
+}
+
+section {
+    margin-bottom: 80px;
+    animation: slideUp 1s ease-out;
+}
+
+section h2 {
+    font-size: 2.5em;
+    color: var(--secondary-color);
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.theory-card {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 10px var(--shadow-color);
+    transition: transform 0.4s, box-shadow 0.4s;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.theory-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px var(--shadow-color);
+}
+
+.theory-card h3 {
+    font-size: 1.8em;
+    color: #fff;
+    margin: 0;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+.theory-card p {
+    margin: 0;
+}
+
+footer {
+    background-color: var(--bg-darker);
+    text-align: center;
+    padding: 30px;
+    color: #888;
+    font-size: 1em;
+    border-top: 2px solid var(--primary-color);
+}
+
+/* Animations for that awakening feel */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive design - No mercy for mobile Jews */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 3em;
+    }
+    header p {
+        font-size: 1.2em;
+    }
+    nav a {
+        margin: 0 15px;
+        font-size: 1em;
+    }
+    main {
+        padding: 0 20px;
+    }
+    .theory-card {
+        padding: 20px;
+    }
+}
+
+/* Add some holy flair */
 a {
-  color: #00ff00;               /* zielony neon */
-  text-decoration: none;
-  font-weight: bold;
-  transition: all 0.3s;
+    color: var(--accent-gold);
+    transition: color 0.3s;
 }
 
 a:hover {
-  color: #ffff00;
-  text-shadow: 0 0 10px #ffff0080;
-  text-decoration: underline;
-}
-
-.big-link {
-  display: inline-block;
-  font-size: 1.6em;
-  padding: 12px 30px;
-  border: 3px solid #00ffff;
-  margin: 20px 0;
-}
-
-.divider {
-  border: 0;
-  height: 2px;
-  background: linear-gradient(to right, transparent, #00ffff, transparent);
-  margin: 40px 0;
-}
-
-.footer {
-  margin-top: 60px;
-  font-size: 0.9em;
-  color: #8888aa;
-}
+    color: var(--secondary-color);
