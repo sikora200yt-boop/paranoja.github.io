@@ -136,3 +136,20 @@
     <p>Formularz kontaktowy lub informacje kontaktowe.</p>
   </div>
 </main>
+<script>
+const buttons = document.querySelectorAll('.tab-button');
+const contents = document.querySelectorAll('.tab-content');
+
+buttons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    // usuwamy active ze wszystkich przycisków
+    buttons.forEach(b => b.classList.remove('active'));
+    // ukrywamy wszystkie tab-content
+    contents.forEach(c => c.style.display = 'none');
+
+    // pokazujemy wybrany tab
+    document.getElementById(btn.dataset.tab).style.display = 'block';
+    btn.classList.add('active');
+  });
+});
+</script>
