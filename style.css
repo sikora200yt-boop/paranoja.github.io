@@ -1,75 +1,128 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PARANOJA.INFO – PRAWDA JEST TAM GDZIEŚ... ALE ŻYDZI JĄ UKRYWAJĄ</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+/* === RESET === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <header>
-    <h1>PARANOJA.INFO</h1>
-    <div class="subtitle">THE TRUTH IS OUT THERE... ALE ŻYDZI JĄ CENZUJUJĄ</div>
-  </header>
+body {
+  background-color: #000000; /* głęboka czerń */
+  color: #e5e5e5;
+  font-family: "Verdana", sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+}
 
-  <nav>
-    <a href="#">HOME</a>
-    <a href="#">TEORIE SPISKOWE</a>
-    <a href="#">DOWODY</a>
-    <a href="#">KONTAKT</a>
-  </nav>
+/* === NAGŁÓWEK === */
+header {
+  background-color: #0d0000;
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 2px solid #660000;
+}
 
-  <main>
+header h1 {
+  color: #ff1a1a;
+  font-size: 2.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 0 0 6px #ff1a1a;
+}
 
-    <div class="intro">
-      <h2>OBUDŹ SIĘ, ARYJSKI BRACIE W CHRYŚCIE</h2>
-      <p>Witaj na ostatniej bastionie prawdy w internecie. Tutaj nie ma żydowskiej cenzury, woke kłamstw ani politpoprawnej mgły.<br>
-      <span class="blink">ŻYDZI KONTROLUJĄ ŚWIAT.</span> Banki, media, rządy, szczepionki, historię – wszystko.<br>
-      Ich cel: zniszczyć białą rasę chrześcijańską i postawić Antychrysta na tronie.<br>
-      My mówimy: <strong>NEVER AGAIN</strong> – tym razem dla nas, nie dla nich.</p>
-    </div>
+/* === NAWIGACJA === */
+nav {
+  margin-top: 1rem;
+}
 
-    <h2 class="section-title">WYBRANE SPISKI – KLIKNIJ JEŻELI MASZ ODWAŻNE SERCE</h2>
+nav a {
+  color: #ff4c4c;
+  margin: 0 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.2s, text-shadow 0.2s;
+}
 
-    <div class="theory-grid">
-      <div class="theory-card">
-        <h3>ROTHSCHILD & ŻYDOWSKI BANKOWY KARTEL</h3>
-        <p>Od 200 lat ta rasa krwiopijców steruje pieniądzem. Wojny, kryzysy, długi narodowe – to ich broń przeciwko gojom.</p>
-      </div>
+nav a:hover {
+  color: #ff0000;
+  text-shadow: 0 0 4px #ff0000;
+}
 
-      <div class="theory-card">
-        <h3>HOLLYWOOD = ŻYDOWSKA PROPAGANDA</h3>
-        <p>Mieszanie ras, promocja sodomii, nienawiść do Chrystusa – każdy szef studia to zwykle obrzezany kłamca.</p>
-      </div>
+/* === MAIN / TREŚĆ === */
+main {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
 
-      <div class="theory-card">
-        <h3>SZCZEPIENIA = ŻYDOWSKA DEPOPULACJA</h3>
-        <p>Pfizer, Gates, Fauci – wszyscy powiązani z syjonizmem. mRNA to znak bestii dla białych chrześcijan.</p>
-      </div>
+.section {
+  background-color: rgba(30, 0, 0, 0.4);
+  border-left: 4px solid #ff1a1a;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  position: relative;
+}
 
-      <div class="theory-card">
-        <h3>HOLOKAUST – WIELKIE ŻYDOWSKIE OSZUSTWO</h3>
-        <p>Zero komór, zero 6 milionów. Szantaż na wieki, żeby Izrael mógł mordować Palestyńczyków bezkarnie.</p>
-      </div>
+.section::before {
+  content: "TOP SECRET";
+  position: absolute;
+  top: -0.8rem;
+  left: 1rem;
+  background: #110000;
+  color: #ff1a1a;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid #ff1a1a;
+  border-radius: 2px;
+}
 
-      <div class="theory-card">
-        <h3>TALMUD – ŚWIĘTA KSIĘGA NENAWISTCI</h3>
-        <p>Jezus w ekskrementach. Goje = zwierzęta. To nie teoria – to ich własna religia przeciwko Chrystusowi.</p>
-      </div>
+/* === OBRAZKI / UFO === */
+.ufo {
+  display: block;
+  margin: 1.5rem auto;
+  max-width: 160px;
+  filter: drop-shadow(0 0 12px #ff0000);
+  animation: hoverUfo 5s ease-in-out infinite;
+}
 
-      <div class="theory-card">
-        <h3>9/11 = MOSSAD INSIDE JOB</h3>
-        <p>Tańczący Izraelczycy, Silverstein, "pull it" – fałszywa flaga dla wojen w imieniu Izraela.</p>
-      </div>
-    </div>
+@keyframes hoverUfo {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
 
-  </main>
+/* === LINKI / PRZYCISKI === */
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #ff1a1a;
+  color: #ff4c4c;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 3px;
+  transition: all 0.2s;
+}
 
-  <footer>
-    © 2026 PARANOJA.INFO – LAST BASTION OF WHITE CHRISTIAN TRUTH<br>
-    <span>Under eternal construction... because the Jews keep lying</span>
-  </footer>
+.button:hover {
+  background-color: #ff1a1a;
+  color: black;
+}
 
-</body>
-</html>
+/* === STOPKA === */
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.8rem;
+  color: #aaa;
+  border-top: 1px solid #660000;
+}
+
+/* === RESPONSYWNOŚĆ === */
+@media (min-width: 768px) {
+  .layout-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+  }
+}
