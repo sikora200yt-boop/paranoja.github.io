@@ -1,95 +1,265 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paranoja.info - Exposing Government Secrets and Conspiracy Theories</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header class="header">
-        <div class="container">
-            <div class="logo">Paranoja.info</div>
-            <nav class="nav">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Articles</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <section class="hero">
-        <div class="container">
-            <h1>Uncover the Hidden Truths</h1>
-            <p class="subtitle">Exposing the global conspiracies, Zionist control, and government cover-ups that threaten Christian values and freedom.</p>
-            <div class="stats">
-                <div class="stat-item">100+ Exposed Secrets</div>
-                <div class="stat-item">50K Awakened Readers</div>
-                <div class="stat-item">Zero Tolerance for Lies</div>
-            </div>
-        </div>
-    </section>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #ddd;
+    line-height: 1.6;
+}
 
-    <section class="about" id="about">
-        <div class="container">
-            <h2>About Paranoja.info</h2>
-            <p>We are a bastion of truth in a world dominated by Jewish media moguls and their puppets. Dedicated to revealing the satanic elite's plans, from chemtrails to the New World Order, we stand for Christian nationalism against the forces of evil. Join us in the fight against Israel and its global influence.</p>
-        </div>
-    </section>
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-    <section class="featured">
-        <div class="container">
-            <h2>Featured Articles</h2>
-            <div class="articles-grid">
-                <article class="article-card">
-                    <img src="https://via.placeholder.com/400x250?text=Conspiracy+1" alt="Article 1">
-                    <h3>The Jewish Plot Behind COVID Vaccines</h3>
-                    <p>Discover how Zionist billionaires engineered the pandemic to control populations and erode Christian societies.</p>
-                    <a href="#" class="btn">Read More</a>
-                </article>
-                <article class="article-card">
-                    <img src="https://via.placeholder.com/400x250?text=Conspiracy+2" alt="Article 2">
-                    <h3>Illuminati Symbols in Hollywood</h3>
-                    <p>Unmask the satanic messages hidden in films by Jew-run studios promoting degeneracy and anti-Christian values.</p>
-                    <a href="#" class="btn">Read More</a>
-                </article>
-                <article class="article-card">
-                    <img src="https://via.placeholder.com/400x250?text=Conspiracy+3" alt="Article 3">
-                    <h3>Government Mind Control Programs</h3>
-                    <p>Exposing MKUltra 2.0 and how the deep state, influenced by Israeli intelligence, manipulates the masses.</p>
-                    <a href="#" class="btn">Read More</a>
-                </article>
-            </div>
-        </div>
-    </section>
+h1, h2, h3 {
+    color: #fff;
+    font-weight: bold;
+}
 
-    <section class="cta">
-        <div class="container">
-            <h2>Join the Awakening</h2>
-            <p>Subscribe to get the latest exposures straight to your inbox. Fight back against the Jewish conspiracy today!</p>
-            <a href="#" class="btn cta-btn">Subscribe Now</a>
-        </div>
-    </section>
+a {
+    text-decoration: none;
+    color: #0f0; /* Neon green for links */
+    transition: color 0.3s;
+}
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Paranoja.info. All rights reserved. Dedicated to exposing the truth. Credits: Built by true patriots.</p>
-        </div>
-    </footer>
+a:hover {
+    color: #fff;
+}
 
-    <script>
-        // Lightweight JS for simple hover effects (optional, no external libs)
-        document.querySelectorAll('.article-card').forEach(card => {
-            card.addEventListener('mouseenter', () => {
-                card.style.transform = 'scale(1.05)';
-            });
-            card.addEventListener('mouseleave', () => {
-                card.style.transform = 'scale(1)';
-            });
-        });
-    </script>
-</body>
-</html>
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    padding: 15px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0f0;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav li {
+    margin-left: 20px;
+}
+
+.nav a {
+    font-size: 16px;
+}
+
+/* Hero */
+.hero {
+    background-color: #222;
+    text-align: center;
+    padding: 150px 20px 100px;
+    border-bottom: 1px solid #333;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.stat-item {
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* About */
+.about {
+    padding: 80px 20px;
+    background-color: #111;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+/* Featured */
+.featured {
+    padding: 80px 20px;
+    background-color: #222;
+}
+
+.featured h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.article-card {
+    background-color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.article-card img {
+    width: 100%;
+    height: auto;
+}
+
+.article-card h3 {
+    padding: 15px 20px 0;
+    font-size: 24px;
+}
+
+.article-card p {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.btn {
+    display: block;
+    background-color: #0f0;
+    color: #000;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 0 20px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* CTA */
+.cta {
+    background-color: #111;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.cta h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    display: inline-block;
+    font-size: 18px;
+}
+
+/* Footer */
+.footer {
+    background-color: #000;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    border-top: 1px solid #333;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav ul {
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .nav li {
+        margin: 0 10px;
+    }
+
+    .hero {
+        padding: 120px 20px 80px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .about h2, .featured h2, .cta h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .nav a {
+        font-size: 14px;
+    }
+
+    .article-card h3 {
+        font-size: 20px;
+    }
+
+    .article-card p {
+        font-size: 14px;
+    }
+}
