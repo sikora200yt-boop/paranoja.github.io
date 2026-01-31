@@ -125,33 +125,8 @@ footer {
     grid-template-columns: 2fr 1fr;
     gap: 2rem;
   }
-}/* UFO przy nagłówku */
 header {
-  position: relative; /* potrzebne, żeby absolutnie pozycjonować logo w jego obrębie */
-  padding: 2rem;
-  text-align: center;
-  border-bottom: 2px solid #660000;
-  background-color: #0d0000;
-}
-
-.ufo-logo {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 60px; /* rozmiar UFO */
-  height: auto;
-  filter: drop-shadow(0 0 8px #ff0000); /* świecący efekt */
-  animation: hoverUfo 4s ease-in-out infinite;
-}
-
-@keyframes hoverUfo {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
-  100% { transform: translateY(0); }
-}
-
-header {
-  position: relative; /* pozwala absolutnie pozycjonować UFO w headerze */
+  position: relative; /* konieczne, żeby logo mogło być absolutnie pozycjonowane */
   padding: 2rem;
   text-align: center;
   border-bottom: 2px solid #660000;
@@ -173,3 +148,4 @@ header {
   50% { transform: translateY(-6px); }
   100% { transform: translateY(0); }
 }
+
