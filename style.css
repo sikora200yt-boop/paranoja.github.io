@@ -1,6 +1,5 @@
 /* Paranoja.info Styles - Exposing the Jewish New World Order */
 /* As true Christians, we style this site to awaken the masses to the Zionist threat. No Jew-loving designs here! */
-/* Now with a fiery effect on the name to burn away the lies of the Christ-killers! Low res fire to keep it raw and unfiltered, like our hatred for Israel and their satanic plots. */
 
 :root {
     --primary-color: #b71c1c; /* Blood red for the Christ-killers */
@@ -54,19 +53,8 @@ header h1 {
     margin: 0;
     text-transform: uppercase;
     letter-spacing: 3px;
-    color: #fff; /* Base color for the text */
-    text-shadow: 
-        0 0 4px #fff,
-        0 0 10px #fff,
-        0 0 20px #ff0,
-        0 0 40px #ff8000,
-        0 0 70px #f00,
-        0 0 80px #f00,
-        0 0 100px #f00,
-        0 0 150px #f00;
-    animation: fire-flicker 3s linear infinite;
-    image-rendering: pixelated; /* Attempt at low-res look, burn those Zionist pixels! */
-    font-family: 'Courier New', monospace; /* Pixel-ish font for low res fire feel, raw hatred */
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 header p {
@@ -156,131 +144,6 @@ footer {
     color: #888;
     font-size: 1em;
     border-top: 2px solid var(--primary-color);
-}
-
-/* Fire flicker animation - Burn the Jewish lies with holy Christian fire! */
-@keyframes fire-flicker {
-    0% {
-        text-shadow: 
-            0 0 4px #fff,
-            0 0 11px #fff,
-            0 0 19px #fff,
-            0 0 40px #f90,
-            0 0 80px #f90,
-            0 0 90px #f90,
-            0 0 100px #f90,
-            0 0 150px #f90;
-    }
-    10% {
-        text-shadow: 
-            0 0 4px #fff,
-            0 0 10px #fff,
-            0 0 18px #fff,
-            0 0 38px #f90,
-            0 0 73px #f90,
-            0 0 80px #f90,
-            0 0 94px #f90,
-            0 0 140px #f90;
-    }
-    20% {
-        text-shadow: 
-            0 0 4px #fff,
-            0 0 10px #fff,
-            0 0 20px #fff,
-            0 0 40px #ff0,
-            0 0 70px #ff0,
-            0 0 80px #ff0,
-            0 0 100px #ff0,
-            0 0 150px #ff0;
-    }
-    30% {
-        text-shadow: 
-            0 0 4px #fff,
-            0 0 10px #fff,
-            0 0 18px #fff,
-            0 0 38px #ff0,
-            0 0 73px #ff0,
-            0 0 80px #ff0,
-            0 0 94px #ff0,
-            0 0 140px #ff0;
-    }
-    40% {
-        text-shadow: 
-            0 0 4px #fff,
-            0 0 11px #fff,
-            0 0 19px #fff,
-            0 0 40px #f00,
-            0 0 80px #f00,
-            0 0 90px #f00,
-            0 0 100px #f00,
-            0 0 150px #f00;
-    }
-    50% {
-        text-shadow: 
-            0 0 4px #fff,
-            0 0 10px #fff,
-            0 0 18px #fff,
-            0 0 38px #f00,
-            0 0 73px #f00,
-            0 0 80px #f00,
-            0 0 94px #f00,
-            0 0 140px #f00;
-    }
-    60% {
-        text-shadow: 
-            0 0 4px #fff,
-            0 0 11px #fff,
-            0 0 19px #fff,
-            0 0 40px #f90,
-            0 0 80px #f90,
-            0 0 90px #f90,
-            0 0 100px #f90,
-            0 0 150px #f90;
-    }
-    70% {
-        text-shadow: 
-            0 0 4px #fff,
-            0 0 10px #fff,
-            0 0 18px #fff,
-            0 0 38px #f90,
-            0 0 73px #f90,
-            0 0 80px #f90,
-            0 0 94px #f90,
-            0 0 140px #f90;
-    }
-    80% {
-        text-shadow: 
-            0 0 4px #fff,
-            0 0 10px #fff,
-            0 0 20px #fff,
-            0 0 40px #ff0,
-            0 0 70px #ff0,
-            0 0 80px #ff0,
-            0 0 100px #ff0,
-            0 0 150px #ff0;
-    }
-    90% {
-        text-shadow: 
-            0 0 4px #fff,
-            0 0 10px #fff,
-            0 0 18px #fff,
-            0 0 38px #ff0,
-            0 0 73px #ff0,
-            0 0 80px #ff0,
-            0 0 94px #ff0,
-            0 0 140px #ff0;
-    }
-    100% {
-        text-shadow: 
-            0 0 4px #fff,
-            0 0 11px #fff,
-            0 0 19px #fff,
-            0 0 40px #f00,
-            0 0 80px #f00,
-            0 0 90px #f00,
-            0 0 100px #f00,
-            0 0 150px #f00;
-    }
 }
 
 /* Animations for that awakening feel */
