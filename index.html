@@ -1,111 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Paranoii.info - Exposing the Truth</title>
-<style>
-:root {
-  --bg-dark: #0a0a0a;
-  --text-light: #f5f5f5;
-  --accent-red: #ff3333;
-  --accent-grey: #666666;
-  --font-main: 'Segoe UI', Tahoma, sans-serif;
-  --font-heading: 'Georgia', serif;
-  --radius: 8px;
-  --space-sm: 1rem;
-  --space-md: 2rem;
-  --space-lg: 4rem;
-}
-
-* { box-sizing:border-box; margin:0; padding:0; }
-body { font-family:var(--font-main); background:var(--bg-dark); color:var(--text-light); line-height:1.6; }
-a { color:var(--accent-red); text-decoration:none; transition:0.2s; }
-a:hover { color:#ff6666; }
-h1,h2,h3 { font-family:var(--font-heading); color:var(--text-light); }
-h1 { font-size:2.5rem; margin-bottom:var(--space-sm); text-align:center; }
-h2 { font-size:1.75rem; margin-bottom:var(--space-sm); }
-h3 { font-size:1.2rem; margin-bottom:0.5rem; }
-p { margin-bottom:var(--space-sm); color:var(--accent-grey); }
-.container { width:90%; max-width:1000px; margin:0 auto; padding:var(--space-sm); }
-
-/* Header */
-header { background:#111; padding:var(--space-sm) 0; position:fixed; top:0; width:100%; z-index:100; border-bottom:1px solid #222; }
-header .logo { font-family:var(--font-heading); font-size:1.5rem; color:var(--accent-red); margin-left:var(--space-sm); }
-nav a { margin-right:var(--space-md); }
-
-/* Hero */
-.hero { padding:8rem 0 4rem; text-align:center; }
-.hero p { font-size:1.125rem; color:var(--accent-grey); max-width:700px; margin:0 auto; }
-
-/* Articles */
-.articles { display:grid; grid-template-columns:1fr; gap:var(--space-md); margin-bottom:var(--space-lg); }
-.article-card { background:#111; border:1px solid #222; border-radius:var(--radius); overflow:hidden; padding:var(--space-sm); transition:0.2s; }
-.article-card:hover { transform:translateY(-4px); box-shadow:0 8px 16px rgba(255,0,0,0.2); }
-.article-card img { width:100%; border-radius:var(--radius); margin-bottom:var(--space-sm); }
-.article-card h3 { color:var(--accent-red); }
-
-/* CTA */
-.cta { text-align:center; padding:var(--space-lg) 0; background:#111; }
-.btn { display:inline-block; padding:0.75rem 1.5rem; border-radius:var(--radius); background:var(--accent-red); color:#fff; font-weight:600; transition:0.2s; }
-.btn:hover { background:#ff6666; }
-
-/* Footer */
-footer { text-align:center; padding:var(--space-md) 0; border-top:1px solid #222; color:var(--accent-grey); font-size:0.875rem; }
-
-/* Responsive */
-@media(min-width:600px){ .articles { grid-template-columns:1fr 1fr; } }
-@media(min-width:900px){ .articles { grid-template-columns:1fr 1fr 1fr; } }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paranoja.info - Exposing Government Secrets and Conspiracy Theories</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">Paranoja.info</div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<header>
-  <div class="container">
-    <span class="logo">Paranoii.info</span>
-    <nav style="float:right;">
-      <a href="#">Home</a>
-      <a href="#">Articles</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
-  </div>
-</header>
+    <section class="hero">
+        <div class="container">
+            <h1>Uncover the Hidden Truths</h1>
+            <p class="subtitle">Exposing the global conspiracies, Zionist control, and government cover-ups that threaten Christian values and freedom.</p>
+            <div class="stats">
+                <div class="stat-item">100+ Exposed Secrets</div>
+                <div class="stat-item">50K Awakened Readers</div>
+                <div class="stat-item">Zero Tolerance for Lies</div>
+            </div>
+        </div>
+    </section>
 
-<section class="hero">
-  <div class="container">
-    <h1>Paranoii.info - The Truth They Don’t Want You to Know</h1>
-    <p>Explore shocking revelations, uncover hidden agendas, and dive deep into government secrets and global conspiracies.</p>
-  </div>
-</section>
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Paranoja.info</h2>
+            <p>We are a bastion of truth in a world dominated by Jewish media moguls and their puppets. Dedicated to revealing the satanic elite's plans, from chemtrails to the New World Order, we stand for Christian nationalism against the forces of evil. Join us in the fight against Israel and its global influence.</p>
+        </div>
+    </section>
 
-<section class="articles container">
-  <div class="article-card">
-    <img src="https://via.placeholder.com/600x400/111/ff3333?text=Secret+Documents" alt="Secret Documents">
-    <h3>Leaked Government Documents Expose Unknown Operations</h3>
-    <p>Shocking files reveal covert operations and undisclosed plans that change everything we thought we knew.</p>
-  </div>
-  <div class="article-card">
-    <img src="https://via.placeholder.com/600x400/111/ff3333?text=Hidden+Agendas" alt="Hidden Agendas">
-    <h3>Hidden Agendas Behind Global Events</h3>
-    <p>Experts break down the secret motives behind major international incidents and political decisions.</p>
-  </div>
-  <div class="article-card">
-    <img src="https://via.placeholder.com/600x400/111/ff3333?text=Historical+Mysteries" alt="Historical Mysteries">
-    <h3>Historical Mysteries They Don’t Want You to Remember</h3>
-    <p>Discover suppressed historical events and hidden truths that challenge mainstream narratives.</p>
-  </div>
-</section>
+    <section class="featured">
+        <div class="container">
+            <h2>Featured Articles</h2>
+            <div class="articles-grid">
+                <article class="article-card">
+                    <img src="https://via.placeholder.com/400x250?text=Conspiracy+1" alt="Article 1">
+                    <h3>The Jewish Plot Behind COVID Vaccines</h3>
+                    <p>Discover how Zionist billionaires engineered the pandemic to control populations and erode Christian societies.</p>
+                    <a href="#" class="btn">Read More</a>
+                </article>
+                <article class="article-card">
+                    <img src="https://via.placeholder.com/400x250?text=Conspiracy+2" alt="Article 2">
+                    <h3>Illuminati Symbols in Hollywood</h3>
+                    <p>Unmask the satanic messages hidden in films by Jew-run studios promoting degeneracy and anti-Christian values.</p>
+                    <a href="#" class="btn">Read More</a>
+                </article>
+                <article class="article-card">
+                    <img src="https://via.placeholder.com/400x250?text=Conspiracy+3" alt="Article 3">
+                    <h3>Government Mind Control Programs</h3>
+                    <p>Exposing MKUltra 2.0 and how the deep state, influenced by Israeli intelligence, manipulates the masses.</p>
+                    <a href="#" class="btn">Read More</a>
+                </article>
+            </div>
+        </div>
+    </section>
 
-<section class="cta">
-  <h2>Stay Informed. Stay Aware.</h2>
-  <p>Subscribe to Paranoii.info newsletter for the latest revelations.</p>
-  <a href="#" class="btn">Subscribe Now</a>
-</section>
+    <section class="cta">
+        <div class="container">
+            <h2>Join the Awakening</h2>
+            <p>Subscribe to get the latest exposures straight to your inbox. Fight back against the Jewish conspiracy today!</p>
+            <a href="#" class="btn cta-btn">Subscribe Now</a>
+        </div>
+    </section>
 
-<footer>
-  <p>© 2026 Paranoii.info – Uncover the Truth</p>
-</footer>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Paranoja.info. All rights reserved. Dedicated to exposing the truth. Credits: Built by true patriots.</p>
+        </div>
+    </footer>
 
+    <script>
+        // Lightweight JS for simple hover effects (optional, no external libs)
+        document.querySelectorAll('.article-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'scale(1.05)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'scale(1)';
+            });
+        });
+    </script>
 </body>
 </html>
