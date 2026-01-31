@@ -148,4 +148,27 @@ header {
   50% { transform: translateY(-6px); }
   100% { transform: translateY(0); }
 }
+.burning-title {
+  position: relative;
+  display: inline-block; /* dopasowuje szerokość do napisu */
+}
 
+.burning-title h1 {
+  font-size: 3rem;
+  color: #ff4c4c; /* czerwony tekst pasujący do stylu */
+  position: relative;
+  z-index: 1; /* napis nad GIF-em */
+  font-family: 'Arial Black', sans-serif;
+}
+
+.fire-gif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0; /* GIF pod napisem */
+  pointer-events: none; /* nie blokuje klikania w menu itp. */
+  mix-blend-mode: screen; /* efekt nakładania ognia na napis */
+}
