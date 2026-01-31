@@ -1,175 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=VT323&display=swap');
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PARANOJA.INFO – PRAWDA JEST TAM GDZIEŚ... ALE ŻYDZI JĄ UKRYWAJĄ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-:root {
-  --black: #000000;
-  --dark-gray: #0a0a0a;
-  --blood-red: #8b0000;
-  --neon-green: #00ff41;
-  --gray-text: #c0c0c0;
-  --white: #e0e0e0;
-}
+  <header>
+    <h1>PARANOJA.INFO</h1>
+    <div class="subtitle">THE TRUTH IS OUT THERE... ALE ŻYDZI JĄ CENZUJUJĄ</div>
+  </header>
 
-* { margin:0; padding:0; box-sizing:border-box; }
+  <nav>
+    <a href="#">HOME</a>
+    <a href="#">TEORIE SPISKOWE</a>
+    <a href="#">DOWODY</a>
+    <a href="#">KONTAKT</a>
+  </nav>
 
-body {
-  background: var(--black) url('https://www.transparenttextures.com/patterns/dark-mosaic.png') repeat;
-  color: var(--gray-text);
-  font-family: 'Courier Prime', monospace;
-  line-height: 1.5;
-  min-height: 100vh;
-}
+  <main>
 
-header {
-  background: linear-gradient(to bottom, #000, #111);
-  padding: 60px 20px 40px;
-  text-align: center;
-  border-bottom: 4px solid var(--blood-red);
-  position: relative;
-  overflow: hidden;
-}
+    <div class="intro">
+      <h2>OBUDŹ SIĘ, ARYJSKI BRACIE W CHRYŚCIE</h2>
+      <p>Witaj na ostatniej bastionie prawdy w internecie. Tutaj nie ma żydowskiej cenzury, woke kłamstw ani politpoprawnej mgły.<br>
+      <span class="blink">ŻYDZI KONTROLUJĄ ŚWIAT.</span> Banki, media, rządy, szczepionki, historię – wszystko.<br>
+      Ich cel: zniszczyć białą rasę chrześcijańską i postawić Antychrysta na tronie.<br>
+      My mówimy: <strong>NEVER AGAIN</strong> – tym razem dla nas, nie dla nich.</p>
+    </div>
 
-header::before {
-  content: "TRUST NO ONE – ESPECIALLY JEWS";
-  position: absolute;
-  top: 20px; left: 50%;
-  transform: translateX(-50%);
-  color: var(--neon-green);
-  font-family: 'VT323', monospace;
-  font-size: 1.8rem;
-  opacity: 0.4;
-  letter-spacing: 6px;
-  white-space: nowrap;
-  animation: flicker 8s infinite alternate;
-}
+    <h2 class="section-title">WYBRANE SPISKI – KLIKNIJ JEŻELI MASZ ODWAŻNE SERCE</h2>
 
-@keyframes flicker {
-  0%,100% { opacity: 0.3; }
-  50%     { opacity: 0.7; }
-}
+    <div class="theory-grid">
+      <div class="theory-card">
+        <h3>ROTHSCHILD & ŻYDOWSKI BANKOWY KARTEL</h3>
+        <p>Od 200 lat ta rasa krwiopijców steruje pieniądzem. Wojny, kryzysy, długi narodowe – to ich broń przeciwko gojom.</p>
+      </div>
 
-h1 {
-  color: var(--blood-red);
-  font-size: 4.5rem;
-  text-shadow: 0 0 20px #400, 0 0 40px #800;
-  letter-spacing: 8px;
-  margin-bottom: 10px;
-  font-weight: 700;
-}
+      <div class="theory-card">
+        <h3>HOLLYWOOD = ŻYDOWSKA PROPAGANDA</h3>
+        <p>Mieszanie ras, promocja sodomii, nienawiść do Chrystusa – każdy szef studia to zwykle obrzezany kłamca.</p>
+      </div>
 
-.subtitle {
-  color: var(--neon-green);
-  font-size: 1.6rem;
-  font-family: 'VT323', monospace;
-  letter-spacing: 3px;
-  margin: 15px 0 30px;
-}
+      <div class="theory-card">
+        <h3>SZCZEPIENIA = ŻYDOWSKA DEPOPULACJA</h3>
+        <p>Pfizer, Gates, Fauci – wszyscy powiązani z syjonizmem. mRNA to znak bestii dla białych chrześcijan.</p>
+      </div>
 
-nav {
-  background: #111;
-  padding: 15px;
-  text-align: center;
-  border-bottom: 2px dashed var(--blood-red);
-}
+      <div class="theory-card">
+        <h3>HOLOKAUST – WIELKIE ŻYDOWSKIE OSZUSTWO</h3>
+        <p>Zero komór, zero 6 milionów. Szantaż na wieki, żeby Izrael mógł mordować Palestyńczyków bezkarnie.</p>
+      </div>
 
-nav a {
-  color: var(--neon-green);
-  margin: 0 25px;
-  text-decoration: none;
-  font-size: 1.3rem;
-  transition: all 0.3s;
-}
+      <div class="theory-card">
+        <h3>TALMUD – ŚWIĘTA KSIĘGA NENAWISTCI</h3>
+        <p>Jezus w ekskrementach. Goje = zwierzęta. To nie teoria – to ich własna religia przeciwko Chrystusowi.</p>
+      </div>
 
-nav a:hover {
-  color: #fff;
-  text-shadow: 0 0 15px var(--neon-green);
-  transform: scale(1.1);
-}
+      <div class="theory-card">
+        <h3>9/11 = MOSSAD INSIDE JOB</h3>
+        <p>Tańczący Izraelczycy, Silverstein, "pull it" – fałszywa flaga dla wojen w imieniu Izraela.</p>
+      </div>
+    </div>
 
-main {
-  max-width: 1100px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
+  </main>
 
-.intro {
-  background: rgba(10,10,10,0.85);
-  border: 2px solid var(--blood-red);
-  padding: 30px;
-  margin-bottom: 50px;
-  box-shadow: 0 0 30px rgba(139,0,0,0.3);
-}
+  <footer>
+    © 2026 PARANOJA.INFO – LAST BASTION OF WHITE CHRISTIAN TRUTH<br>
+    <span>Under eternal construction... because the Jews keep lying</span>
+  </footer>
 
-.intro h2 {
-  color: var(--neon-green);
-  font-size: 2.4rem;
-  margin-bottom: 20px;
-  border-bottom: 2px dashed var(--blood-red);
-  padding-bottom: 10px;
-}
-
-.section-title {
-  color: var(--neon-green);
-  text-align: center;
-  margin: 50px 0 30px;
-  font-size: 2.2rem;
-}
-
-.theory-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-  gap: 25px;
-}
-
-.theory-card {
-  background: #0f0f0f;
-  border: 1px solid #400;
-  padding: 25px;
-  position: relative;
-  transition: all 0.4s;
-  overflow: hidden;
-}
-
-.theory-card::before {
-  content: "CLASSIFIED";
-  position: absolute;
-  top: -10px; right: -40px;
-  background: var(--blood-red);
-  color: white;
-  font-size: 0.9rem;
-  padding: 5px 50px;
-  transform: rotate(45deg);
-  opacity: 0.6;
-}
-
-.theory-card:hover {
-  transform: translateY(-8px);
-  border-color: var(--neon-green);
-  box-shadow: 0 0 25px rgba(0,255,65,0.4);
-}
-
-.theory-card h3 {
-  color: #ff4444;
-  margin-bottom: 15px;
-  font-size: 1.6rem;
-}
-
-footer {
-  text-align: center;
-  padding: 40px 20px;
-  color: #555;
-  font-size: 0.9rem;
-  border-top: 3px double #400;
-  margin-top: 80px;
-}
-
-.blink {
-  animation: blink 1.5s step-end infinite;
-}
-
-@keyframes blink {
-  50% { opacity: 0; }
-}
-
-@media (max-width: 768px) {
-  h1 { font-size: 3.5rem; }
-  nav a { margin: 10px; display: inline-block; }
+</body>
+</html>
